@@ -40,6 +40,6 @@ public class GrayTileService extends TileService {
         Tile t = getQsTile();
         if (t == null) return;
         t.setState(isOn() ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
-        t.updateState();
+        t.updateTile();
     }
 }
